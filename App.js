@@ -23,10 +23,8 @@ export default function App() {
       try {
         const response = await axios.get(API_ENDPOINT);
 
-        console.log('API data fetched:', response.data);
         const feeds = response.data.feeds;
         const lastAlertData = feeds[feeds.length - 1].created_at;
-        console.log('olha a data', lastAlertData);
         if (lastAlertData && isRecentAttempt(lastAlertData)) {
           setStatus('PERIGO');
           triggerAlert();

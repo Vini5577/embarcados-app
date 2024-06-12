@@ -23,10 +23,16 @@
         "VIBRATE",
         "WAKE_LOCK",
         "RECEIVE_BOOT_COMPLETED"
-      ]
+      ],
+      "package": "com.embarcados.SecurityApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d3661cd8-1daf-4be5-b013-93cc8767b73f"
+      }
     }
   }
 }
